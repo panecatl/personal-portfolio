@@ -1,6 +1,7 @@
 import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
+
 function Nav(props) {
     // categories for nav bar 
     const {
@@ -15,7 +16,7 @@ function Nav(props) {
         <header className="flex-row px-1">
             <h2>
                 <a data-testid="link" href="/">
-                    <span role="img" aria-label="camera">Yussel Panecatl</span>
+                    <span role="img" aria-label="me">Yussel Panecatl</span>
                 </a>
             </h2>
             <nav>
@@ -26,7 +27,7 @@ function Nav(props) {
                         </a>
                     </li>
                     <li className="mx-2">
-                        <span onClick={() => setContactSelected(true)}>Resume</span>
+                        <span onClick={() => setContactSelected(true)}>Contact Me</span>
                     </li>
                     {categories.map((category) => (
                         <li className={`mx-1 ${

@@ -18,12 +18,12 @@ const PhotoList = ({ category }) => {
         },
         {
             name: 'Robot Gladiators',
-            category: 'Solo Project',
+            category: 'Single Project',
             description: 'A game played from the terminal where users have the ability to fight with different robots and users are able to buy health and upgrade their robots.',
         },
         {
             name: 'Run Buddy',
-            category: 'Solo Project',
+            category: 'Single Project',
             description: 'A website for users that are looking for trainers to help them get back into shape.',
         },
     ]);
