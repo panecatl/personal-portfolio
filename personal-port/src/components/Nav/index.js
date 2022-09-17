@@ -26,7 +26,7 @@ function Nav(props) {
                         </a>
                     </li>
                     <li className="mx-2">
-                        <span onClick={() => setContactSelected(true)}>Contact</span>
+                        <span onClick={() => setContactSelected(true)}>Resume</span>
                     </li>
                     {categories.map((category) => (
                         <li className={`mx-1 ${

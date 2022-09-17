@@ -5,23 +5,39 @@ import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+
   const [categories] = useState([
-    {name: "hobbyXchange",
-    description: "A local marketplace where hobby enthusist can buy supplies."}
+    {
+      name: "Group Projects",
+    description: "Click this tab to view some of the group projects I have been a part of."
+  },
+  {
+    name: "Single Projects",
+    description: "Click to view the individual projects I have worked on."
+  }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
   return (
     <div>
       <Nav
       categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
         ></Nav>
       <main>
-        <ContactForm></ContactForm>
-        <Gallery currentCategory={currentCategory}></Gallery>
-        <About></About>
+        {!contactSelected ? (
+          <>
+          <Gallery currentCategory={currentCategory}></Gallery>
+          <About></About>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </main>
     </div>
   );
