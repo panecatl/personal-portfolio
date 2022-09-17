@@ -4,103 +4,28 @@ import Modal from '../Modal';
 const PhotoList = ({ category }) => {
     const [currentPhoto, setCurrentPhoto] = useState();
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    
     const [photos] = useState([
         {
-            name: 'Grocery aisle',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            name: 'hobbyXchange',
+            category: 'Group Project',
+            description: 'A marketplace where hobby enthusiest can get togehter to sell and buy items for their hobbies.',
         },
         {
-            name: 'Grocery booth',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            name: 'Recipe n Drinks',
+            category: 'Group Project',
+            description: 'A one stop application that allows users to get the recipes for meals and different cocktails of their choice. A different way to spice up date night.',
         },
         {
-            name: 'Building exterior',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            name: 'Robot Gladiators',
+            category: 'Solo Project',
+            description: 'A game played from the terminal where users have the ability to fight with different robots and users are able to buy health and upgrade their robots.',
         },
         {
-            name: 'Restaurant table',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            name: 'Run Buddy',
+            category: 'Solo Project',
+            description: 'A website for users that are looking for trainers to help them get back into shape.',
         },
-        {
-            name: 'Cafe interior',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Cat green eyes',
-            category: 'portraits',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Green parrot',
-            category: 'portraits',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Yellow macaw',
-            category: 'portraits',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Pug smile',
-            category: 'portraits',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Pancakes',
-            category: 'food',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Burrito',
-            category: 'food',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Scallop pasta',
-            category: 'food',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Burger',
-            category: 'food',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Fruit bowl',
-            category: 'food',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Green river',
-            category: 'landscape',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Docks',
-            category: 'landscape',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Panoramic village by sea',
-            category: 'landscape',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Domestic landscape',
-            category: 'landscape',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Park bench',
-            category: 'landscape',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        }
     ]);
 
     const currentPhotos = photos.filter((photo) => photo.category === category);

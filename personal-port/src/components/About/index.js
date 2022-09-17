@@ -4,7 +4,6 @@ import coverImage from '../../assets/cover/coding.jpeg';
 function About() {
     return(
         <section className="my-5">
-            <h1 id="about">Yussel Panecatl</h1>
             <img src={coverImage} className="my-2" style={{ height: "300px", width: "700px" }} alt="cover" />
             <p>Hello, and welcome to my page! I am a junior developer and have experience with the front end and back end of applications!
                 My goal is to make individuals and companies webiste dreams come true! I have extensive knowledge with HTML, CSS, Bootstrap, 
