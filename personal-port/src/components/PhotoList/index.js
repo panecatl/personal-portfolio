@@ -26,6 +26,11 @@ const PhotoList = ({ category }) => {
             category: 'Single Project',
             description: 'A website for users that are looking for trainers to help them get back into shape.',
         },
+        {
+            name: 'restaurantHelper',
+            category: 'Group Project',
+            description: 'An application that start up restaurants or food trucks can use as a point of sale application.'
+        }
     ]);
 
     const currentPhotos = photos.filter((photo) => photo.category === category);
