@@ -17,6 +17,11 @@ const PhotoList = ({ category }) => {
             description: 'A one stop application that allows users to get the recipes for meals and different cocktails of their choice. A different way to spice up date night.',
         },
         {
+            name: 'restaurantHelper',
+            category: 'Group Project',
+            description: 'An application that start up restaurants or food trucks can use as a point of sale application.'
+        },
+        {
             name: 'Robot Gladiators',
             category: 'Single Project',
             description: 'A game played from the terminal where users have the ability to fight with different robots and users are able to buy health and upgrade their robots.',
@@ -25,11 +30,6 @@ const PhotoList = ({ category }) => {
             name: 'Run Buddy',
             category: 'Single Project',
             description: 'A website for users that are looking for trainers to help them get back into shape.',
-        },
-        {
-            name: 'restaurantHelper',
-            category: 'Group Project',
-            description: 'An application that start up restaurants or food trucks can use as a point of sale application.'
         }
     ]);
 
